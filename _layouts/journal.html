@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="catalogue">
+  {% for post in site.reads %}
+  {% if post.category == page.category %}
+    <a href="{{site.baseurl}}{{post.url}}" class="catalogue-item">
+      <div>
+        <time datetime="{{ post.postdate }}" class="catalogue-time">{{ post.postdate | date: "%B %d, %Y" }}</time>
+        <h1 class="catalogue-title">{{ post.title }}</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          {{ post.content | strip_html | truncatewords: 30 }}
+        </p>
+
+      </div>
+    </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+
+
+
+<!-- <div class="post-card">
+    <br> 
+    
+      {% for post in site.reads %}
+        {% if post.category == page.category %}
+      <ul class="postList">
+        <li style="border-top: 1px solid black;">
+          
+          <a href="{{site.baseurl}}{{post.url}}" class="articleLink"> 
+            <span>{{ post.postdate | date: "%b %-d, %Y" }}</span> 
+            <h3> {{post.title}}</h3>
+          <br>
+          <small>{{ post.content | strip_html | truncatewords: 30 }}</small>
+        </a>
+        </li>
+      </ul>
+        {% endif %}
+      {% endfor %}
+  </div>
+
+</div> -->
