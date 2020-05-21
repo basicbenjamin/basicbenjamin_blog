@@ -284,14 +284,14 @@ h1 {
   background: #000000;
 }
 
-.indexHeader {
+/* .indexHeader {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
   -ms-grid-row: 6;
       grid-row-start: 6;
   margin: 67px 0 0 0;
-}
+} */
 
 .indexHeader h1 {
   font-size: 1.5em;
@@ -304,7 +304,7 @@ h1 {
   margin: -37px -45px 15px 20px;
 }
 
-.indexNavigation {
+/* .indexNavigation {
   -ms-grid-column: 7;
       grid-column-start: 7;
   grid-column-end: 7;
@@ -313,7 +313,7 @@ h1 {
   margin: 20em 0 0 0;
   list-style: none;
   font-size: 5px;
-}
+} */
 
 .indexNavigation li {
   margin-top: 14px;
